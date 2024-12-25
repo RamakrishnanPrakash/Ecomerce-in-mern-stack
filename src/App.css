@@ -1,0 +1,112 @@
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.block-appear {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.horizontal-appear {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.loading-appear {
+  animation: home 0.5s linear;
+}
+
+@keyframes home {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  from {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
+}
+
+.right-appear {
+  animation: rightScroll linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+
+@keyframes rightScroll {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.email-container {
+  animation: leftScroll linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.main-section {
+  animation: leftScroll linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+
+.leftScroll {
+  animation: leftScroll linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.drop {
+  animation: rotate 7s linear infinite; /* Set a duration for the animation (e.g., 2s) */
+  filter: drop-shadow(0 0 0.75rem #ec4899);
+}
+
+@keyframes rotate {
+  /* Corrected spelling of 'rotate' */
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes leftScroll {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.description-appear {
+  animation: appear 1s linear;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}

@@ -1,0 +1,6 @@
+.custom-toast-container .Toastify__toast {
+  width: 350px; /* Set your desired width */
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
