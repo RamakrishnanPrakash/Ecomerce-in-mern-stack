@@ -1,0 +1,19 @@
+/* header {
+  width: 100%;
+  height: auto;
+  padding: 10px 30px;
+}
+.main-section {
+  width: 100%;
+  display: inline-block;
+}
+.main-section::before .main-section::after {
+  content: "";
+  display: table;
+}
+/* /* .right-sidebar {
+  width: 75%;
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+} */
